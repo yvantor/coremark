@@ -56,7 +56,7 @@ core_bench_state(ee_u32 blksize,
     ee_u32 i;
 
 #if CORE_DEBUG
-    ee_printf("State Bench: %d,%d,%d,%04x\n", seed1, seed2, step, crc);
+    ee_printf("State Bench: %d,%d,%d,%04x\n\r", seed1, seed2, step, crc);
 #endif
     for (i = 0; i < NUM_CORE_STATES; i++)
     {
@@ -70,7 +70,7 @@ core_bench_state(ee_u32 blksize,
 #if CORE_DEBUG
         ee_printf("%d,", fstate);
     }
-    ee_printf("\n");
+    ee_printf("\n\r");
 #else
     }
 #endif
@@ -90,7 +90,7 @@ core_bench_state(ee_u32 blksize,
 #if CORE_DEBUG
         ee_printf("%d,", fstate);
     }
-    ee_printf("\n");
+    ee_printf("\n\r");
 #else
     }
 #endif
@@ -143,7 +143,7 @@ core_init_state(ee_u32 size, ee_s16 seed, ee_u8 *p)
     ee_u8 *buf = 0;
 #if CORE_DEBUG
     ee_u8 *start = p;
-    ee_printf("State: %d,%d\n", size, seed);
+    ee_printf("State: %d,%d\n\r", size, seed);
 #endif
     size--;
     next = 0;
@@ -190,7 +190,7 @@ core_init_state(ee_u32 size, ee_s16 seed, ee_u8 *p)
         total++;
     }
 #if CORE_DEBUG
-    ee_printf("State Input: %s\n", start);
+    ee_printf("State Input: %s\n\r", start);
 #endif
 }
 
