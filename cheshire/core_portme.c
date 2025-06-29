@@ -142,11 +142,11 @@ portable_init(core_portable *p, int *argc, char *argv[])
     {
         ee_printf(
             "ERROR! Please define ee_ptr_int to a type that holds a "
-            "pointer!\n");
+            "pointer!\n\r");
     }
     if (sizeof(ee_u32) != 4)
     {
-        ee_printf("ERROR! Please define ee_u32 to a 32b unsigned type!\n");
+        ee_printf("ERROR! Please define ee_u32 to a 32b unsigned type!\n\r");
     }
     p->portable_id = 1;
 }

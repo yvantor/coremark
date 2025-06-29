@@ -53,7 +53,7 @@ void
 printmat(MATDAT *A, ee_u32 N, char *name)
 {
     ee_u32 i, j;
-    ee_printf("Matrix %s [%dx%d]:\n", name, N, N);
+    ee_printf("Matrix %s [%dx%d]:\n\r", name, N, N);
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
@@ -62,14 +62,14 @@ printmat(MATDAT *A, ee_u32 N, char *name)
                 ee_printf(",");
             ee_printf("%d", A[i * N + j]);
         }
-        ee_printf("\n");
+        ee_printf("\n\r");
     }
 }
 void
 printmatC(MATRES *C, ee_u32 N, char *name)
 {
     ee_u32 i, j;
-    ee_printf("Matrix %s [%dx%d]:\n", name, N, N);
+    ee_printf("Matrix %s [%dx%d]:\n\r", name, N, N);
     for (i = 0; i < N; i++)
     {
         for (j = 0; j < N; j++)
@@ -78,7 +78,7 @@ printmatC(MATRES *C, ee_u32 N, char *name)
                 ee_printf(",");
             ee_printf("%d", C[i * N + j]);
         }
-        ee_printf("\n");
+        ee_printf("\n\r");
     }
 }
 #endif

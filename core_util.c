@@ -212,38 +212,38 @@ check_data_types()
     ee_u8 retval = 0;
     if (sizeof(ee_u8) != 1)
     {
-        ee_printf("ERROR: ee_u8 is not an 8b datatype!\n");
+        ee_printf("ERROR: ee_u8 is not an 8b datatype!\n\r");
         retval++;
     }
     if (sizeof(ee_u16) != 2)
     {
-        ee_printf("ERROR: ee_u16 is not a 16b datatype!\n");
+        ee_printf("ERROR: ee_u16 is not a 16b datatype!\n\r");
         retval++;
     }
     if (sizeof(ee_s16) != 2)
     {
-        ee_printf("ERROR: ee_s16 is not a 16b datatype!\n");
+        ee_printf("ERROR: ee_s16 is not a 16b datatype!\n\r");
         retval++;
     }
     if (sizeof(ee_s32) != 4)
     {
-        ee_printf("ERROR: ee_s32 is not a 32b datatype!\n");
+        ee_printf("ERROR: ee_s32 is not a 32b datatype!\n\r");
         retval++;
     }
     if (sizeof(ee_u32) != 4)
     {
-        ee_printf("ERROR: ee_u32 is not a 32b datatype!\n");
+        ee_printf("ERROR: ee_u32 is not a 32b datatype!\n\r");
         retval++;
     }
     if (sizeof(ee_ptr_int) != sizeof(int *))
     {
         ee_printf(
-            "ERROR: ee_ptr_int is not a datatype that holds an int pointer!\n");
+            "ERROR: ee_ptr_int is not a datatype that holds an int pointer!\n\r");
         retval++;
     }
     if (retval > 0)
     {
-        ee_printf("ERROR: Please modify the datatypes in core_portme.h!\n");
+        ee_printf("ERROR: Please modify the datatypes in core_portme.h!\n\r");
     }
     return retval;
 }
